@@ -2,15 +2,108 @@
 <!DOCTYPE html>
   <head>
     <meta charset = "utf-8">
-    <title> Project: Basketball webpage</title>
+    <title> Project: Cars Webpage</title>
   </head>
   <body>
+    <h1 style="background-color:DodgerBlue;">Cars for Rent by Endrit Prelvukaj</h1>
+    <p style="background-color:LightGreen;">Here are different types of cars (click the button to see the prices)...</p>
+<button type="button" onclick="Price()">Click!</button>
+
+<script>
+function Price() {
+  document.getElementById("Price_").style.fontSize = "25px"; 
+  document.getElementById("Price_").style.color = "red";
+  document.getElementById("Price_").style.backgroundColor = "yellow"; 
+  document.getElementById("Price_").innerHTML = "<p><h2><li>Honda: $20 per day.</li></h2></p> <h2><li>Toyota: $25 per day.</li></h2></p> <h2><li>Dodge: $32 per day.</li></h2>";        
+
+
+}
+</script>
+  <p id="Price_">Here you can see the prices.</p>
+
+<script>
+   function Honda() {
+       document.getElementById("Honda_p").style.display = "block";
+       document.getElementById("Toyota_p").style.display = "none";
+       document.getElementById("Dodge_p").style.display = "none";
+    } 
+</script>
+
+<script>
+    function Toyota() {
+       document.getElementById("Honda_p").style.display = "none";
+       document.getElementById("Toyota_p").style.display = "block";
+       document.getElementById("Dodge_p").style.display = "none";
+    } 
+</script>
+<script>
+    function Dodge() {
+      document.getElementById("Honda_p").style.display = "none";
+      document.getElementById("Toyota_p").style.display = "none";
+      document.getElementById("Dodge_p").style.display = "block";
+   } 
+</script>
+
+ <div class="content">
+     <div id="Honda_p"><img 
+     src="https://www.cnet.com/a/img/CJJMkfkol-OiMUpCcEO8npiBVgw=/940x0/2021/01/07/f8a6e416-b3bd-4298-876c-697bf94d08d7/2021-honda-accord-009.jpg" width="600" height="440" /> 
+     </div>
+     
+      <div id="Toyota_p"><img 
+      src="https://www.cnet.com/a/img/G3op2-PHi2yblRAiOSkMSNMy300=/2020/06/30/23810cca-aab3-47ca-959a-19a12e71e517/2021-toyota-rav4-prime-ogi1.jpg"width="600" height="440" /> 
+      </div>
+      
+      <div id="Dodge_p"><img   src="https://images.holley.com/04-durango-hellcat.jpg" width ="600" height="440" />
+      
+      </div>
+ </div>
   
-    <h1> Basketball Teams</h1>
+<style>
+table, th, td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t1 {
+  width: 99%;    
+  background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+
+<h2>In Our Inventory</h2>
+<table style="width:95%">
+<table id="t1">
+  <tr>
+    <th>Make</th>
+    <th>Model</th> 
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="Honda()">Honda</button></td>
+    <td>Accord</td>
+    <td>2015</td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="Toyota()">Toyota</button></td>
+    <td>Rav4</td>
+    <td>2016</td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="Dodge()">Dodge</button></td>
+    <td>Durango</td>
+    <td>2017</td>
+  </tr>
+</table>
+
     
-    <p>...Here are all the teams and players</p>
-    <img src="https://basketballqld.com.au/wp-content/uploads/2019/12/2.png" alt="The tea,s" width="200"/>
-   <img src="https://cdna.4imprint.com/prod/rend/300/379877/16_2.jpg" width="400"/>
   </body>
  </html> 
   
+
+</body>
+</html>
