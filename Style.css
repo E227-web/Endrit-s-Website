@@ -1,1 +1,42 @@
+<style>
+table, th, td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t1 {
+  width: 99%;    
+  background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+
+<h2>In Our Inventory</h2>
+<table style="width:95%">
+<table id="t1">
+  <tr>
+    <th>Make</th>
+    <th>Model</th> 
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="Honda()">Honda</button></td>
+    <td>Accord</td>
+    <td>2015</td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="Toyota()">Toyota</button></td>
+    <td>Rav4</td>
+    <td>2016</td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="Dodge()">Dodge</button></td>
+    <td>Durango</td>
+    <td>2017</td>
+  </tr>
+</table>
 
